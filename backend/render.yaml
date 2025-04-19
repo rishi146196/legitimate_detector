@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: legit-detector
+    env: python
+    buildCommand: poetry install
+    startCommand: poetry run python app.py
+    region: oregon
+    plan: free
+    branch: main
+    runtime: python
+    pythonVersion: 3.11.11
